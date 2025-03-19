@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran</title>
+    <style>
+        body {
+            background-color: #003366;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            color: black;
+            text-align: left;
+        }
+        h2 { color: #003366; text-align: center; }
+        hr { border: 1px solid #003366; width: 80%; }
+        label { font-weight: bold; display: block; margin-top: 10px; }
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button {
+            background: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background: #0055aa;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Formulir Pendaftaran</h2>
+        <form action="#" method="POST">
+            
+            <label for="name">Username:</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+
+            <label for="description">Deskripsi:</label>
+            <textarea id="description" name="description" rows="5" placeholder="Masukkan deskripsi..."></textarea>
+
+            <label>Pilih Mata Kuliah:</label>
+            <input type="checkbox" name="maths" value="on"> Pemrograman Web<br>
+            <input type="checkbox" name="physics" value="on"> Deep Learning<br>
+            <input type="checkbox" name="algorithm" value="on"> Mobile Programming<br>
+            <input type="checkbox" name="database" value="on"> Machine Learning<br>
+
+            <label>Pilih Jurusan:</label>
+            <input type="radio" name="jurusan" value="TI"> Teknik Informatika<br>
+            <input type="radio" name="jurusan" value="SI"> Sistem Informasi<br>
+
+            <label for="dropdown">Pilih Mata Pelajaran:</label>
+            <select name="dropdown" id="dropdown">
+                <option value="maths">Pemrograman Web</option>
+                <option value="physics">Deep Learning</option>
+                <option value="algorithm">Mobile Programming</option>
+                <option value="database">Machine Learning</option>
+            </select>
+
+            <label for="fileupload">Upload File:</label>
+            <input type="file" id="fileupload" name="fileupload" accept="image/*">
+
+            <div class="button-container">
+                <input type="submit" value="Submit" class="button">
+                <input type="reset" value="Reset" class="button">
+            </div>
+        </form>
+
+        <hr>
+
+        <div class="button-container">
+            <a href="22.html" class="button">&larr; Previous Page</a>
+            <a href="pemograman web.html" class="button">Kembali ke Portofolio</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2025 Kristio</p>
+        </div>
+    </div>
+
+</body>
+</html>
